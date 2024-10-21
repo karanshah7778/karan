@@ -3,117 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            margin: 0;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        .intro {
-            padding: 40px;
-            text-align: center;
-            background-color: #fff;
-        }
-        .intro h2 {
-            margin-bottom: 20px;
-        }
-        .projects {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            padding: 40px;
-            background-color: #e8e8e8;
-        }
-        .project {
-            width: 30%;
-            margin-bottom: 20px;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .project img {
-            width: 100%;
-            height: auto;
-        }
-        .project h3 {
-            margin: 15px 0;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Tailwind CSS Example</title>
 </head>
-<body>
-
-    <header>
-  <div class="container">
-    <h1 class="logo">Your Name</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-    <section class="intro" id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am a Web Developer specializing in WordPress and PHP development. I have experience designing and developing responsive websites.</p>
-    </section>
-
-    <section class="projects" id="projects">
-        <div class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Project One</h3>
-            <p>A brief description of Project One.</p>
+<body class="bg-gray-100">
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="md:flex">
+            <div class="p-8">
+                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Tailwind CSS</div>
+                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Example of using Tailwind</a>
+                <p class="mt-2 text-gray-500">This is a simple example of a card using Tailwind CSS.</p>
+            </div>
         </div>
-        <div class="project">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Project Two</h3>
-            <p>A brief description of Project Two.</p>
-        </div>
-        <div class="project">
-            <img src="project3.jpg" alt="Project 3">
-            <h3>Project Three</h3>
-            <p>A brief description of Project Three.</p>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <p>Contact: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-    </footer>
-
+    </div>
 </body>
 </html>
